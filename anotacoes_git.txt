@@ -1,0 +1,36 @@
+# -> comentário
+$ -> comando git
+
+# criar um repositório entra na pasta e digita:
+
+$ git init
+
+# saber o estado atual do repositório digita:
+
+$ git status
+
+# adicionar um arquivo não rastreado ou alterado a área de commit. Ainda não é commit:
+
+$ git add <nome_do_arquivo>
+
+# commitar arquivo
+
+$ git commit -m "<digite seu comentário aqui>" <nome_do_arquivo>
+
+# para saber as versões do repositório
+
+$ git tag
+
+# para mudar de brach
+
+$ git checkout <nome_da_branch>
+
+# para criar uma nova branch
+
+$ git checkout -b <nome_da_branch_nova>
+
+# configurar a identificação da pessoal que vai fazer os commits
+# se você remover a opção --global, essa configuração fica só para o repositório
+
+git config --global user.name "João Carlos Fonseca"
+git config --global user.email "jcfonsecagit@gmail.com"
