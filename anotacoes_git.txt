@@ -32,5 +32,30 @@ $ git checkout -b <nome_da_branch_nova>
 # configurar a identificação da pessoal que vai fazer os commits
 # se você remover a opção --global, essa configuração fica só para o repositório
 
-git config --global user.name "João Carlos Fonseca"
-git config --global user.email "jcfonsecagit@gmail.com"
+$ git config --global user.name "João Carlos Fonseca"
+$ git config --global user.email "jcfonsecagit@gmail.com"
+
+#para saber o histórico dos commits que foram feitos
+
+$ git log
+
+# para saber o que foi alterado naquele repositório.
+# se vocÊ usar o parametro -p. você tem mais detalhes.
+
+$ git whatchanged [-p]
+
+# para saber quais repositórios remotos o repositório local está lincado
+
+$ git remote
+
+# para adicionar o repositório local a um remotos
+
+$ git remote add <apelido do repositorio remoto> <url do repositorio remote>
+
+# para adicionar coisas para o repositorio remoto
+
+$ git push <apelido do repositorio remoto> <nome da branch>
+
+# para baixar um repositorio de um servidor remoto
+
+$ git clone <url>
