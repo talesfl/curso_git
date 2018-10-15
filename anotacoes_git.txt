@@ -59,3 +59,37 @@ $ git push <apelido do repositorio remoto> <nome da branch>
 # para baixar um repositorio de um servidor remoto
 
 $ git clone <url>
+
+# comando para listar as branches do repositório
+
+$ git branch
+
+# para criar uma nova branch
+
+$ git branch <nome da nova branch>
+
+# commitar uma nova branch para o repositório remoto
+
+$ git push -u origin <nome da nova branch>
+
+onde:
+-u -> parametro para que a nova branch remota seja lincada a branch local e assim espelhar as mudanças
+origin -> apelido para o repositório remoto
+
+# trazer dados do repositório remoto
+
+$ git pull
+
+# commando para baixar uma branch nova do repositório remoto
+(é interessante fazer um 'git pull' para saber o que tem no servidor remoto)
+
+$ git branch - t <nome da branch nova> origin/<nome da branch nova>
+
+onde:
+
+-t -> parametro para indicar que a branch nova deve ser rastreada junto com a remota
+
+
+# para saber as atualizacoes no repositorio remoto
+
+$ git fetch <nome do repositorio remoto>
