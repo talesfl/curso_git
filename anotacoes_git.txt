@@ -93,3 +93,16 @@ onde:
 # para saber as atualizacoes no repositorio remoto
 
 $ git fetch <nome do repositorio remoto>
+
+# pra trazer os commits de uma branch pra outra. Faz checkou na branch que se quer atualizar
+# atualizar essa branch e depois faz a chamada ao comando
+
+$ git merge <nome da branch que será inserida na branch atual>
+
+# para atualizar uma branch com base em outra. (Esse é o caso de atualizar os 
+# commits que faltavam em uma branch secundária de desenvolvimento com os commits
+# da branch princpal)
+# por exemplo vou atualizar a branch 'desenv' com o conteúdo da branch 'master'
+# master -> desenv
+
+$ git rebase master desenvolviment
