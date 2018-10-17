@@ -107,3 +107,40 @@ $ git merge <nome da branch que será inserida na branch atual>
 
 $ git checkout desenvolvimento (deve estar na branch que precisa ser atualizada)
 $ git rebase master desenvolvimento
+
+
+# para voltar um arquivo para o último estado que ele tava no repositório,
+# quando ele não tinha sido addicionado as mudanças rastreadas como o "git add"
+
+$ git checkout <nome do ARQUIVO>
+
+# para tirar um arquivo da área de modificação (staged)
+# depois desse comando você pode fazer 'git checkout <nome do arquivo>'
+# para desfazer as alterações
+
+$ git reset HEAD <nome do ARQUIVO>
+
+# para desfazer uma alteração já commitada (ideal apenas a última alteração)
+
+$ git reset <identificador do commit ao qual quer voltar>
+
+# para desfazer um alteração específica de um commit específico
+
+$ git revert <indentificador do commit que se quer reverter>
+
+# ver comando git stash. permiter "salvar" alterações que não foram staged e não comitadas
+# para poder commitar mais tarde após uma correção de bug, por exemplo.
+
+$ git stash
+
+# para saber o que tá no stash
+
+$ git stash list
+
+# para recuperar o que tava no stash
+
+$ git stash apply <identificador do stash>
+
+# para remover algo que está no stash
+
+$ git stash drop
