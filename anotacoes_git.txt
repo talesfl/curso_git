@@ -144,3 +144,18 @@ $ git stash apply <identificador do stash>
 # para remover algo que está no stash
 
 $ git stash drop
+
+# para fazer a diferença entre branches
+# assumindo que você está em uma branch secundária de desenvolvimento
+
+$ git diff <apelido do repositorio remoto>/<branch de referencia para fazer a diferença>
+
+
+# fluxo de atualização de branch
+    git checkout master: altera o local de trabalho para a branch master
+    git pull: atualiza o histórico da branch master
+    git checkout dev: altera o local de trabalho para a branch dev
+    git rebase master: atualiza o HEAD da branch dev para receber as alterações da branch master
+    git checkout master: altera o local de trabalho novamente para a branch master
+    git merge dev: mescla as alterações da branch dev na master
+    git push: envia suas alterações para o repositório remoto
