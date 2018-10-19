@@ -159,3 +159,8 @@ $ git diff <apelido do repositorio remoto>/<branch de referencia para fazer a di
     git checkout master: altera o local de trabalho novamente para a branch master
     git merge dev: mescla as alterações da branch dev na master
     git push: envia suas alterações para o repositório remoto
+	
+# para adicionar um commit específico a uma branch específica.
+# mude para a branch que você quer receber o commit
+
+$ git cherry-pick <hash do commit>
